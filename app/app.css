@@ -31,6 +31,9 @@ a:active  {
   color: #fff !important;
 }
 
+.md-button.md-accent.md-raised {
+  background-color: brown !important;
+}
 
 .statsbar md-card-title-text{
   text-align: right;
