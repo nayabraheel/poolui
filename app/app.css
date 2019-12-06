@@ -27,7 +27,8 @@ a:active  {
 }
 
 .maintoolbar {
-  background-color: #fff;
+  background-color: #333d4b;
+  color: #fff !important;
 }
 
 
@@ -77,7 +78,7 @@ md-tooltip .md-content {
 .sidebar {
   display: flex;
   flex-wrap: nowrap;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .sidebar a {
@@ -88,7 +89,7 @@ md-tooltip .md-content {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
-  opacity: 0.87; 
+  opacity: 0.87;
 }
 
 .sidebar md-icon, .sidebar ng-md-icon {
