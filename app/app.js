@@ -166,20 +166,20 @@ var app = angular.module('poolui', [
 		}
 
 		// ------- App Update
-		var update = function() {
-			if (appCache.status == window.applicationCache.UPDATEREADY) {
-				appCache.swapCache();
-				$window.location.reload();
-			}
-		}
-
-		appCache.addEventListener("updateready", function(event) {
-			update();
-		}, false);
-
-		var updateCache = function () {
-			appCache.update();
-		}
+		// var update = function() {
+		// 	if (appCache.status == window.applicationCache.UPDATEREADY) {
+		// 		appCache.swapCache();
+		// 		$window.location.reload();
+		// 	}
+		// }
+		//
+		// appCache.addEventListener("updateready", function(event) {
+		// 	update();
+		// }, false);
+		//
+		// var updateCache = function () {
+		// 	appCache.update();
+		// }
 
 		// API Requests
 		var loadData = function () {
@@ -208,12 +208,12 @@ var app = angular.module('poolui', [
 		// Start doing things
 		loadOnce();
 		loadData();
-		update();
+		// update();
 
 		// Start the timer and register global requests
 		timerService.startTimer(GLOBALS.api_refresh_interval);
 		timerService.register(loadData, 'global');
-		$interval(updateCache, GLOBALS.app_update_interval); // check for app updates every 5 mins
+		// $interval(updateCache, GLOBALS.app_update_interval); // check for app updates every 5 mins
 
 		// Start address tracking servuce after starting timer, only one callback supported at a time
 		addressService.start(function(addrStats) {
