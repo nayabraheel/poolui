@@ -31,6 +31,20 @@ a:active  {
   color: #fff !important;
 }
 
+md-card.md-default-theme md-card-header md-card-header-text .md-subhead, md-card md-card-header md-card-header-text .md-subhead, md-card.md-default-theme md-card-title md-card-title-text:not(:only-child) .md-subhead, md-card md-card-title md-card-title-text:not(:only-child) .md-subhead {
+    color: white;
+}
+.metric md-icon {
+    font-size: 36px;
+    color: white;
+}
+
+.md-card.md-default-theme, md-card {
+  color: white;
+  background-color: #333d4b;
+  border-radius: 5px;
+}
+
 .md-toolbar:not(.md-menu-toolbar) md-icon {
   color: white;
   fill: white;
