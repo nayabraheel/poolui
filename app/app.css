@@ -33,6 +33,7 @@ a:active  {
 
 md-card.md-default-theme md-card-header md-card-header-text .md-subhead, md-card md-card-header md-card-header-text .md-subhead, md-card.md-default-theme md-card-title md-card-title-text:not(:only-child) .md-subhead, md-card md-card-title md-card-title-text:not(:only-child) .md-subhead {
     color: white;
+    font-weight: 700;
 }
 
 .table.md-table th.md-column, .md-table-pagination {
@@ -52,6 +53,7 @@ md-card.md-default-theme md-card-header md-card-header-text .md-subhead, md-card
   color: white;
   background-color: #333d4b;
   border-radius: 5px;
+  font-weight: 700;
 }
 
 .md-toolbar:not(.md-menu-toolbar) md-icon {
@@ -104,6 +106,7 @@ md-tooltip .md-content {
   text-align: left;
   color: #fff;
   margin: 0px;
+  font-weight: 700;
 }
 
 .sidebar {
@@ -254,4 +257,13 @@ md-dialog .login{
 
 .theironfist {
   cursor: pointer;
+}
+
+table.md-table td.md-cell > *, table.md-table th.md-column > * {
+  color: white;
+  font-weight: 700;
+}
+
+.md-toolbar-tools {
+  font-weight: 700;
 }
